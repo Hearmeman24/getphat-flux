@@ -154,7 +154,7 @@ fi
 echo "Finished downloading models!"
 
 declare -A MODEL_CATEGORIES=(
-    ["$NETWORK_VOLUME/ComfyUI/models/checkpoints"]="$CHECKPOINT_IDS_TO_DOWNLOAD"
+    ["$NETWORK_VOLUME/ComfyUI/models/diffusion_models"]="$CHECKPOINT_IDS_TO_DOWNLOAD"
     ["$NETWORK_VOLUME/ComfyUI/models/loras"]="$LORAS_IDS_TO_DOWNLOAD"
 )
 
