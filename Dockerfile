@@ -56,24 +56,17 @@ RUN for repo in \
     https://github.com/rgthree/rgthree-comfy.git \
     https://github.com/JPS-GER/ComfyUI_JPS-Nodes.git \
     https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git \
-    https://github.com/Jordach/comfy-plasma.git \
     https://github.com/ltdrdata/ComfyUI-Impact-Pack.git \
     https://github.com/Fannovel16/comfyui_controlnet_aux.git \
     https://github.com/yolain/ComfyUI-Easy-Use.git \
     https://github.com/kijai/ComfyUI-Florence2.git \
-    https://github.com/WASasquatch/was-node-suite-comfyui.git \
     https://github.com/theUpsider/ComfyUI-Logic.git \
     https://github.com/cubiq/ComfyUI_essentials.git \
     https://github.com/chrisgoringe/cg-image-picker.git \
-    https://github.com/chflame163/ComfyUI_LayerStyle.git \
     https://github.com/ltdrdata/ComfyUI-Impact-Subpack.git \
     https://github.com/Jonseed/ComfyUI-Detail-Daemon.git \
     https://github.com/shadowcz007/comfyui-mixlab-nodes.git \
-    https://github.com/chflame163/ComfyUI_LayerStyle_Advance.git \
-    https://github.com/cubiq/ComfyUI_IPAdapter_plus.git \
     https://github.com/bash-j/mikey_nodes.git \
-    https://github.com/1038lab/ComfyUI-JoyCaption.git \
-    https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced.git \
     https://github.com/chrisgoringe/cg-use-everywhere.git \
     https://github.com/M1kep/ComfyLiterals.git; \
     do \
