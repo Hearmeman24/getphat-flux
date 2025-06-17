@@ -2,7 +2,7 @@
   "id": "bfab5f91-8df3-43eb-9b95-4ce8898571a5",
   "revision": 0,
   "last_node_id": 162,
-  "last_link_id": 267,
+  "last_link_id": 268,
   "nodes": [
     {
       "id": 91,
@@ -162,7 +162,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 34,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -276,7 +276,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 35,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -318,7 +318,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 40,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -604,7 +604,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 36,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -681,13 +681,13 @@
         106
       ],
       "flags": {},
-      "order": 32,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 261
+          "link": 268
         }
       ],
       "outputs": [
@@ -1083,7 +1083,7 @@
         246
       ],
       "flags": {},
-      "order": 27,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -1134,51 +1134,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 9,
-      "type": "CLIPTextEncode",
-      "pos": [
-        -4389.9033203125,
-        423.5328674316406
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 30,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 178
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            167,
-            251
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.39",
-        "Node name for S&R": "CLIPTextEncode",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "Missionary sex"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 122,
       "type": "DualCLIPLoader",
       "pos": [
@@ -1212,43 +1167,6 @@
         "clip_l.safetensors",
         "t5xxl_fp8_e4m3fn_scaled.safetensors",
         "flux",
-        "default"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 121,
-      "type": "UNETLoader",
-      "pos": [
-        -5389.67919921875,
-        403.2482604980469
-      ],
-      "size": [
-        270,
-        82
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            204
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.40",
-        "Node name for S&R": "UNETLoader",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "getphatFLUXReality_v7.safetensors",
         "default"
       ],
       "color": "#323",
@@ -1324,7 +1242,7 @@
       },
       "widgets_values": [
         1.5000000000000002,
-        379379367123303,
+        763604666382747,
         "randomize",
         20,
         1.5,
@@ -1359,7 +1277,7 @@
         58
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1395,7 +1313,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -1434,7 +1352,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 31,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1489,7 +1407,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 38,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -1530,7 +1448,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1565,7 +1483,7 @@
         110
       ],
       "flags": {},
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -1610,7 +1528,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 37,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -1649,7 +1567,7 @@
         78
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1693,7 +1611,7 @@
         442.00006103515625
       ],
       "flags": {},
-      "order": 39,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -1749,7 +1667,7 @@
       },
       "widgets_values": [
         true,
-        7441279112499,
+        195872879305271,
         "randomize",
         2.5
       ],
@@ -1770,16 +1688,14 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
           "name": "MODEL",
           "type": "MODEL",
-          "links": [
-            261
-          ]
+          "links": []
         }
       ],
       "title": "Get_model_node",
@@ -1806,7 +1722,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1842,7 +1758,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1876,7 +1792,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1912,7 +1828,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1933,6 +1849,43 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 121,
+      "type": "UNETLoader",
+      "pos": [
+        -5389.67919921875,
+        403.2482604980469
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            204
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "UNETLoader",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "flux1-dev-fp8.safetensors",
+        "default"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 162,
@@ -1970,8 +1923,53 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "example.png",
+        "ComfyUI_temp_pnpbx_00004_.png",
         "image"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 9,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -4389.9033203125,
+        423.5328674316406
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 178
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            167,
+            251
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.39",
+        "Node name for S&R": "CLIPTextEncode",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "Blonde lady"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -1988,7 +1986,7 @@
         346
       ],
       "flags": {},
-      "order": 33,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -2034,7 +2032,8 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            262
+            262,
+            268
           ]
         }
       ],
@@ -2380,14 +2379,6 @@
       "INT"
     ],
     [
-      261,
-      156,
-      0,
-      134,
-      0,
-      "MODEL"
-    ],
-    [
       262,
       157,
       0,
@@ -2434,6 +2425,14 @@
       157,
       4,
       "IMAGE"
+    ],
+    [
+      268,
+      157,
+      0,
+      134,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -2520,10 +2519,10 @@
   "extra": {
     "ue_links": [],
     "ds": {
-      "scale": 0.724729500000001,
+      "scale": 1.061076460950002,
       "offset": [
-        5368.7202713559545,
-        -243.0897945836623
+        4499.879759408802,
+        -351.395991398861
       ]
     },
     "links_added_by_ue": [],
