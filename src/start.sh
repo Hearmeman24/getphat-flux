@@ -189,7 +189,7 @@ done
 
 echo "✅ All models downloaded successfully!"
 
-cd CUSTOM_NODES_DIR
+cd $CUSTOM_NODES_DIR
 git clone https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced.git
 cd ComfyUI-PuLID-Flux-Enhanced
 pip install -r requirements.txt
