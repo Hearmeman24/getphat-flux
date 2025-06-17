@@ -42,10 +42,13 @@ else
 fi
 
 COMFYUI_DIR="$NETWORK_VOLUME/ComfyUI"
+CUSTOM_NODES_DIR="$NETWORK_VOLUME/ComfyUI/custom_nodes"
+INSIGHTFACE_DIR="$NETWORK_VOLUME/ComfyUI/models/insightface/models"
 WORKFLOW_DIR="$NETWORK_VOLUME/ComfyUI/user/default/workflows"
 MODEL_WHITELIST_DIR="$NETWORK_VOLUME/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt"
 DIFFUSION_MODELS_DIR="$NETWORK_VOLUME/ComfyUI/models/diffusion_models"
 TEXT_ENCODERS_DIR="$NETWORK_VOLUME/ComfyUI/models/text_encoders"
+PULID_DIR="$NETWORK_VOLUME/ComfyUI/models/pulid"
 VAE_DIR="$NETWORK_VOLUME/ComfyUI/models/vae"
 CONTROLNET_DIR="$NETWORK_VOLUME/ComfyUI/models/controlnet"
 
@@ -104,6 +107,7 @@ if [ "$download_flux" == "true" ]; then
   download_model "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors" "$TEXT_ENCODERS_DIR/clip_l.safetensors"
   download_model "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn_scaled.safetensors" "$TEXT_ENCODERS_DIR/t5xxl_fp8_e4m3fn_scaled.safetensors"
   download_model "https://huggingface.co/realung/flux1-dev.safetensors/resolve/main/ae.safetensors" "$VAE_DIR/ae.safetensors"
+  download_model "https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.1.safetensors" "$PULID_DIR/pulid_flux_v0.9.1.safetensors"
   download_model "https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro-2.0/resolve/main/diffusion_pytorch_model.safetensors" "$CONTROLNET_DIR/flux_union_controlnet_2.0.safetensors"
 fi
 
@@ -184,6 +188,29 @@ while pgrep -x "aria2c" > /dev/null; do
 done
 
 echo "✅ All models downloaded successfully!"
+
+cd CUSTOM_NODES_DIR
+git clone https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced.git
+cd ComfyUI-PuLID-Flux-Enhanced
+pip install -r requirements.txt
+
+echo "Downloading AntelopeV2"
+mkdir -p "$INSIGHTFACE_DIR"
+echo "Created $INSIGHTFACE_DIR"
+cd "$INSIGHTFACE_DIR"
+wget https://github.com/deepinsight/insightface/releases/download/v0.7/antelopev2.zip
+python3 -c "
+import zipfile
+import os
+with zipfile.ZipFile('antelopev2.zip', 'r') as zip_ref:
+    for member in zip_ref.infolist():
+        if not member.is_dir():
+            member.filename = os.path.basename(member.filename)
+            zip_ref.extract(member, '.')
+"
+echo "Finished downloading antelope files"
+mkdir "$INSIGHTFACE_DIR/antelopev2"
+mv *.onnx "$INSIGHTFACE_DIR/antelopev2"
 
 echo "Checking and copying workflow..."
 mkdir -p "$WORKFLOW_DIR"
